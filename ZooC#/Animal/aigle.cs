@@ -1,11 +1,6 @@
 public class Aigle : Animal
 {
-    public Aigle(string nom, int age) : base(nom, age)
+    public Aigle(string nom, int age, Sexe sexe) : base(nom, age, sexe)
     {
-    }
-
-    public void Voler()
-    {
-        Console.WriteLine($"{Nom} vole dans le ciel.");
     }
 }

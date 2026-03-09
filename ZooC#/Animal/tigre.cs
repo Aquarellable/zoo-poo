@@ -1,11 +1,6 @@
 public class Tigre : Animal
 {
-    public Tigre(string nom, int age) : base(nom, age)
+    public Tigre(string nom, int age, Sexe sexe) : base(nom, age, sexe)
     {
-    }
-
-    public void Rugir()
-    {
-        Console.WriteLine($"{Nom} rugit très fort !");
     }
 }
