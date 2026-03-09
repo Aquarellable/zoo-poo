@@ -1,26 +1,28 @@
-public class Habitat
+public abstract class Habitat
 {
-    public string TypeAnimal { get; set; }
-    public int Capacite { get; set; }
+    public int CapaciteMax { get; set; }
+    public int PrixAchat { get; set; }
+    public int PrixVente { get; set; }
+
     public List<Animal> Animaux { get; set; }
 
-    public Habitat(string typeAnimal, int capacite)
+    public Habitat(int capacite, int prixAchat, int prixVente)
     {
-        TypeAnimal = typeAnimal;
-        Capacite = capacite;
+        CapaciteMax = capacite;
+        PrixAchat = prixAchat;
+        PrixVente = prixVente;
         Animaux = new List<Animal>();
     }
 
-    public void AjouterAnimal(Animal animal)
+    public bool AjouterAnimal(Animal animal)
     {
-        if (Animaux.Count < Capacite)
+        if (Animaux.Count >= CapaciteMax)
         {
-            Animaux.Add(animal);
-            Console.WriteLine($"{animal.Nom} ajouté dans l'habitat {TypeAnimal}");
+            Console.WriteLine("Habitat plein.");
+            return false;
         }
-        else
-        {
-            Console.WriteLine("Habitat plein !");
-        }
+
+        Animaux.Add(animal);
+        return true;
     }
 }
