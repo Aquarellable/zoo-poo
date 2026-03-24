@@ -1,6 +1,6 @@
 public class Tigre : Animal
 {
-    public Tigre(string nom, Sexe sexe) : base(nom, sexe)
+    public Tigre(string nom, Sexe sexe, int age) : base(nom, sexe, age)
     {
         TypeNourriture = Nourriture.Viande;
 

@@ -1,0 +1,221 @@
+{
+  "animals": {
+    "tiger": {
+      "male": {
+        "food": "meat",
+        "food_per_day_kg": 12,
+        "days_before_hunger": 2,
+        "sexual_maturity_years": 6,
+        "reproduction_end_years": 14,
+        "life_expectancy_years": 25
+      },
+      "female": {
+        "food": "meat",
+        "food_per_day_kg": 10,
+        "days_before_hunger": 2,
+        "offspring_per_birth": 3,
+        "max_birth_interval_months": 20,
+        "sexual_maturity_years": 4,
+        "gestation_months": 3,
+        "reproduction_end_years": 14,
+        "infant_mortality_rate": 0.33,
+        "life_expectancy_years": 25
+      }
+    },
+    "eagle": {
+      "male": {
+        "food": "meat",
+        "food_per_day_kg": 0.25,
+        "days_before_hunger": 10,
+        "sexual_maturity_years": 4,
+        "reproduction_end_years": 14,
+        "life_expectancy_years": 25,
+        "notes": "faithful"
+      },
+      "female": {
+        "food": "meat",
+        "food_per_day_kg": 0.3,
+        "days_before_hunger": 10,
+        "eggs_per_year": 2,
+        "laying_month": "March",
+        "sexual_maturity_years": 4,
+        "gestation_days": 45,
+        "reproduction_end_years": 14,
+        "infant_mortality_rate": 0.5,
+        "life_expectancy_years": 25,
+        "notes": "faithful"
+      }
+    },
+    "chicken": {
+      "female": {
+        "food": "seeds",
+        "food_per_day_kg": 0.15,
+        "days_before_hunger": 1,
+        "eggs_per_year": 200,
+        "sexual_maturity_months": 6,
+        "incubation_weeks": 6,
+        "reproduction_end_years": 8,
+        "infant_mortality_rate": 0.5,
+        "life_expectancy_years": 15
+      },
+      "male": {
+        "food": "seeds",
+        "food_per_day_kg": 0.18,
+        "days_before_hunger": 2,
+        "sexual_maturity_months": 6,
+        "reproduction_end_years": 8,
+        "life_expectancy_years": 15
+      }
+    }
+  },
+
+  "food": {
+    "meat": {
+      "price_per_kg": 5
+    },
+    "seeds": {
+      "price_per_kg": 2.5
+    }
+  },
+
+  "animal_prices": {
+    "tiger": {
+      "6_months": { "buy": 3000, "sell": 1500 },
+      "4_years": { "buy": 120000, "sell": 60000 },
+      "14_years": { "buy": 60000, "sell": 10000 }
+    },
+    "eagle": {
+      "6_months": { "buy": 1000, "sell": 500 },
+      "4_years": { "buy": 4000, "sell": 2000 },
+      "14_years": { "buy": 2000, "sell": 400 }
+    },
+    "chicken": {
+      "6_months": { "buy": 20, "sell": 10 }
+    },
+    "rooster": {
+      "6_months": { "buy": 100, "sell": 20 }
+    }
+  },
+
+  "habitats": {
+    "tiger": {
+      "buy_price": 2000,
+      "sell_price": 500,
+      "capacity": 2,
+      "overpopulation_loss_per_month": 1,
+      "disease_probability": 0.2
+    },
+    "eagle": {
+      "buy_price": 2000,
+      "sell_price": 500,
+      "capacity": 4,
+      "overpopulation_loss_per_month": 1,
+      "disease_probability": 0.1
+    },
+    "chicken": {
+      "buy_price": 300,
+      "sell_price": 50,
+      "capacity": 10,
+      "overpopulation_loss_per_month": 4,
+      "disease_probability": 0.05
+    }
+  },
+
+  "diseases": {
+    "mortality_rate": 0.1,
+    "duration_variation": 0.2,
+    "animals": {
+      "tiger": {
+        "probability_per_year": 0.3,
+        "duration_days": 15
+      },
+      "eagle": {
+        "probability_per_year": 0.1,
+        "duration_days": 30
+      },
+      "chicken": {
+        "probability_per_year": 0.05,
+        "duration_days": 5
+      }
+    }
+  },
+
+  "visitors": {
+    "per_specimen_per_month": {
+      "high_season": {
+        "tiger": 30,
+        "eagle": 15,
+        "chicken": 2
+      },
+      "low_season": {
+        "tiger": 5,
+        "eagle": 7,
+        "chicken": 0.5
+      }
+    },
+    "variation": 0.2,
+    "high_season_months": ["May", "June", "July", "August", "September"],
+    "ticket_prices": {
+      "adult": 17,
+      "child": 13
+    },
+    "visitor_group": {
+      "adults": 2,
+      "children": 2
+    }
+  },
+
+  "economy": {
+    "initial_budget": 80000,
+    "subsidies_per_year": {
+      "tiger": 43800,
+      "eagle": 2190
+    }
+  },
+
+  "rules": {
+    "animals_do_not_reproduce_when_hungry": true,
+    "pregnant_females_lose_fetus_if_hungry": true,
+    "pregnant_females_food_multiplier": 2,
+    "pregnant_females_not_exposed_to_public": true,
+    "animals_do_not_reproduce_first_month_after_arrival": true,
+    "reproduction_requires_available_space": true
+  },
+
+  "actions": [
+    "buy_animal",
+    "sell_animal",
+    "buy_food",
+    "buy_habitat",
+    "sell_habitat",
+    "next_turn"
+  ],
+
+  "events": [
+    "pregnancy",
+    "birth",
+    "infant_death",
+    "end_of_life",
+    "overpopulation",
+    "disease"
+  ],
+
+  "exceptional_events": {
+    "fire": {
+      "monthly_probability": 0.01,
+      "effect": "lose_1_habitat"
+    },
+    "theft": {
+      "monthly_probability": 0.01,
+      "effect": "lose_1_specimen"
+    },
+    "pests": {
+      "monthly_probability": 0.2,
+      "effect": "lose_10_percent_seeds"
+    },
+    "spoiled_meat": {
+      "monthly_probability": 0.1,
+      "effect": "lose_20_percent_meat"
+    }
+  }
+}
