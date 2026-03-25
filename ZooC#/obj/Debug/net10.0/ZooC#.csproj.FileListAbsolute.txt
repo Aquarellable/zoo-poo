@@ -1,0 +1,15 @@
+c:\Users\yanae\OneDrive\Documents\Ynov\cours B1 IA\POO\zoo-poo\ZooC#\obj\Debug\net10.0\ZooC#.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\yanae\OneDrive\Documents\Ynov\cours B1 IA\POO\zoo-poo\ZooC#\obj\Debug\net10.0\ZooC#.AssemblyInfoInputs.cache
+c:\Users\yanae\OneDrive\Documents\Ynov\cours B1 IA\POO\zoo-poo\ZooC#\obj\Debug\net10.0\ZooC#.AssemblyInfo.cs
+c:\Users\yanae\OneDrive\Documents\Ynov\cours B1 IA\POO\zoo-poo\ZooC#\obj\Debug\net10.0\ZooC#.csproj.CoreCompileInputs.cache
+c:\Users\yanae\OneDrive\Documents\Ynov\cours B1 IA\POO\zoo-poo\ZooC#\obj\Debug\net10.0\ZooC#.sourcelink.json
+c:\Users\yanae\OneDrive\Documents\Ynov\cours B1 IA\POO\zoo-poo\ZooC#\bin\Debug\net10.0\ZooC#.exe
+c:\Users\yanae\OneDrive\Documents\Ynov\cours B1 IA\POO\zoo-poo\ZooC#\bin\Debug\net10.0\ZooC#.deps.json
+c:\Users\yanae\OneDrive\Documents\Ynov\cours B1 IA\POO\zoo-poo\ZooC#\bin\Debug\net10.0\ZooC#.runtimeconfig.json
+c:\Users\yanae\OneDrive\Documents\Ynov\cours B1 IA\POO\zoo-poo\ZooC#\bin\Debug\net10.0\ZooC#.dll
+c:\Users\yanae\OneDrive\Documents\Ynov\cours B1 IA\POO\zoo-poo\ZooC#\bin\Debug\net10.0\ZooC#.pdb
+c:\Users\yanae\OneDrive\Documents\Ynov\cours B1 IA\POO\zoo-poo\ZooC#\obj\Debug\net10.0\ZooC#.dll
+c:\Users\yanae\OneDrive\Documents\Ynov\cours B1 IA\POO\zoo-poo\ZooC#\obj\Debug\net10.0\refint\ZooC#.dll
+c:\Users\yanae\OneDrive\Documents\Ynov\cours B1 IA\POO\zoo-poo\ZooC#\obj\Debug\net10.0\ZooC#.pdb
+c:\Users\yanae\OneDrive\Documents\Ynov\cours B1 IA\POO\zoo-poo\ZooC#\obj\Debug\net10.0\ZooC#.genruntimeconfig.cache
+c:\Users\yanae\OneDrive\Documents\Ynov\cours B1 IA\POO\zoo-poo\ZooC#\obj\Debug\net10.0\ref\ZooC#.dll

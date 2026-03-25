@@ -1,0 +1,194 @@
+{
+  "animaux": {
+    "tigre": {
+      "male": {
+        "alimentation_par_jour_kg": 12,
+        "jours_avant_faim": 2,
+        "maturite_sexuelle_jours": 2190,
+        "fin_de_reproduction_jours": 5110,
+        "esperance_de_vie_jours": 9125,
+        "remarques": "25"
+      },
+      "femelle": {
+        "alimentation_par_jour_kg": 10,
+        "jours_avant_faim": 2,
+        "ponte_portee": "3 individus par portée / max 1 portée tous les 20 mois",
+        "maturite_sexuelle_jours": 1460,
+        "gestation_jours": 90,
+        "fin_de_reproduction_jours": 5110,
+        "mortalite_infantile": "33%",
+        "esperance_de_vie_jours": 9125
+      }
+    },
+    "aigle": {
+      "male": {
+        "alimentation_par_jour_kg": 0.25,
+        "jours_avant_faim": 10,
+        "maturite_sexuelle_jours": 1460,
+        "fin_de_reproduction_jours": 5110,
+        "esperance_de_vie_jours": 9125,
+        "remarques": "Fidéle"
+      },
+      "femelle": {
+        "alimentation_par_jour_kg": 0.3,
+        "jours_avant_faim": 10,
+        "ponte_portee": "2 oeuf en Mars",
+        "maturite_sexuelle_jours": 1460,
+        "gestation_jours": 45,
+        "fin_de_reproduction_jours": 5110,
+        "mortalite_infantile": "50%",
+        "esperance_de_vie_jours": 9125,
+        "remarques": "Fidéle"
+      }
+    },
+    "poule": {
+      "femelle": {
+        "alimentation_par_jour_kg": 0.15,
+        "jours_avant_faim": 1,
+        "ponte_portee": "200 eufs par an",
+        "maturite_sexuelle_jours": 180,
+        "gestation_jours": 42,
+        "esperance_de_vie_jours": 2920,
+        "mortalite_infantile": "50%",
+        "remarques": "15"
+      },
+      "coq": {
+        "alimentation_par_jour_kg": 0.18,
+        "jours_avant_faim": 2,
+        "maturite_sexuelle_jours": 180,
+        "esperance_de_vie_jours": 2920
+      }
+    }
+  },
+  "aliments": {
+    "viande": {
+      "prix_kg": 5
+    },
+    "graines": {
+      "prix_kg": 2.5
+    }
+  },
+  "prix_animaux": {
+    "achat": {
+      "tigre_6_mois": 3000,
+      "poule_6_mois": 20,
+      "coq_6_mois": 100,
+      "aigle_6_mois": 1000,
+      "tigre_4_ans": 120000,
+      "aigle_4_ans": 4000,
+      "tigre_14_ans": 60000,
+      "aigle_14_ans": 2000
+    },
+    "vente": {
+      "tigre_6_mois": 1500,
+      "poule_6_mois": 10,
+      "coq_6_mois": 20,
+      "aigle_6_mois": 500,
+      "tigre_4_ans": 60000,
+      "aigle_4_ans": 2000,
+      "tigre_14_ans": 10000,
+      "aigle_14_ans": 400
+    }
+  },
+  "habitats": {
+    "tigre": {
+      "prix_achat": 2000,
+      "prix_vente": 500,
+      "capacite": 2,
+      "perte_surpopulation": "1 / mois",
+      "probabilite_malade": "20%"
+    },
+    "aigle": {
+      "prix_achat": 2000,
+      "prix_vente": 500,
+      "capacite": 4,
+      "perte_surpopulation": "1 / mois",
+      "probabilite_malade": "10%"
+    },
+    "poules": {
+      "prix_achat": 300,
+      "prix_vente": 50,
+      "capacite": 10,
+      "perte_surpopulation": "4 / mois",
+      "probabilite_malade": "5%"
+    }
+  },
+  "maladies": {
+    "tigre": {
+      "probabilite_annuelle": "30%",
+      "duree_jours": 15
+    },
+    "aigle": {
+      "probabilite_annuelle": "10%",
+      "duree_jours": 30
+    },
+    "poules": {
+      "probabilite_annuelle": "5%",
+      "duree_jours": 5
+    }
+  },
+  "visiteurs": {
+    "tigre": {
+      "saison_haute": 30,
+      "saison_basse": 5
+    },
+    "poule": {
+      "saison_haute": 2,
+      "saison_basse": 0.5
+    },
+    "aigle": {
+      "saison_haute": 15,
+      "saison_basse": 7
+    }
+  },
+  "saisons": {
+    "haute": "mai-septembre"
+  },
+  "tarifs_visiteurs": {
+    "adulte": 17,
+    "enfant": 13
+  },
+  "topologie_visiteurs": {
+    "adulte": 2,
+    "enfant": 2
+  },
+  "budget_initial": 80000,
+  "subventions_annuelles": {
+    "aigle": 2190,
+    "tigre": 43800
+  },
+  "actions_possibles": [
+    "Achat/vente animal",
+    "Achat nouriture",
+    "Achat/vente habitat",
+    "Tour suivant"
+  ],
+  "evenements_possibles": [
+    "Grossesse",
+    "Naissance",
+    "Mort infantile",
+    "Fin de vie individu",
+    "Surpopulation",
+    "Maladie"
+  ],
+  "evenements_exceptionnels": {
+    "incendie": {"probabilite_mensuelle": "1%", "effet": "Perte de 1 habitat"},
+    "vol": {"probabilite_mensuelle": "1%", "effet": "Perte de 1 spécimen"},
+    "nuisibles": {"probabilite_mensuelle": "20%", "effet": "Perte de 10% des graines"},
+    "viande_avariee": {"probabilite_mensuelle": "10%", "effet": "Perte de 20% de la viande"}
+  },
+  "mois": [
+    {"nom": "Janvier", "jours": 31},
+    {"nom": "Février", "jours": 28},
+    {"nom": "Mars", "jours": 31},
+    {"nom": "Avril", "jours": 30},
+    {"nom": "Mai", "jours": 31},
+    {"nom": "Juin", "jours": 30},
+    {"nom": "Juillet", "jours": 31},
+    {"nom": "Août", "jours": 31},
+    {"nom": "Septembre", "jours": 30},
+    {"nom": "Octobre", "jours": 31},
+    {"nom": "Novembre", "jours": 30},
+    {"nom": "Décembre", "jours": 31}
+  ]
+}
