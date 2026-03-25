@@ -12,16 +12,14 @@ public enum Sexe
 public class Animal
 {
     public string Nom { get; set; }
-    public int Age { get; set; }
     public Sexe Sexe { get; set; }
     public Nourriture TypeNourriture { get; set; }
     public double NourritureParJour { get; set; }
     public int JoursAvantFaim { get; set; }
 
-    public Animal(string nom, int age, Sexe sexe)
+    public Animal(string nom, Sexe sexe)
     {
         Nom = nom;
-        Age = age;
         Sexe = sexe;
     }
 }

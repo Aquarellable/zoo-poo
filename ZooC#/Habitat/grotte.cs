@@ -1,6 +1,6 @@
 public class Grotte : Habitat
 {
-    public Grotte() : base(2, 2000, 500)
+    public Grotte() : base(3, 500, 350)
     {
     }
 

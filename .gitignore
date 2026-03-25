@@ -1,0 +1,5 @@
+bin/
+.zoo-poo.sln
+.ZooC#/obj/ZooC#.csproj.nuget.g.props
+obj/
+ ZooC#/obj/Debug/

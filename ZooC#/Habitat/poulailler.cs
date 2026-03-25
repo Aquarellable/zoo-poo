@@ -1,6 +1,6 @@
 public class Poulailler : Habitat
 {
-    public Poulailler() : base(4, 2000, 500)
+    public Poulailler() : base(10, 200, 150)
     {
     }
 

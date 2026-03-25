@@ -1,6 +1,6 @@
 public class Nid : Habitat
 {
-    public Nid() : base(10, 300, 50)
+    public Nid() : base(5, 300, 220)
     {
     }
 
